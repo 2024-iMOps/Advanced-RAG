@@ -1,4 +1,4 @@
-def LLMPrompt():
+def LLMPrompt(): 
     prompt = """You are an assistant for question-answering tasks.
 
 Use the following pieces of retrieved context to answer the question. \
