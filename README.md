@@ -22,3 +22,19 @@ curl -sSL https://install.python-poetry.org | python3 -
 export PATH=$HOME/.local/bin:$PATH
 poetry install
 ```
+
+## Run Upstage DP
+```
+cd ~/Advanced-RAG
+python upstageDP.py
+```
+output:
+- ~/Advanced-RAG/data/parsed_pdf
+- ~/Advanced-RAG/data/all_documents.json
+
+## Run RAG
+```
+cd ~/Advanced-RAG
+python ragBaseline.py
+```
+- ~/Advanced-RAG/data/user_data
