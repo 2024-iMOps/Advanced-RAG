@@ -37,4 +37,5 @@ output:
 cd ~/Advanced-RAG
 python ragBaseline.py
 ```
+output:
 - ~/Advanced-RAG/data/user_data
