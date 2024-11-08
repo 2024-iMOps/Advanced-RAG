@@ -6,6 +6,7 @@ import openai
 from langchain_core.prompts import PromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
+from langchain_openai import ChatOpenAI
 
 from imops_prompts import (
     LLMPrompt, 
@@ -109,10 +110,17 @@ retriever = setup_retriever(split_docs, embeddings)
 question = dummydata[0]['question']
 
 ## User Intent
+llm_intent = ChatOpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    model="gpt-4o",
+    temperature=0.1,
+    max_tokens=512,
+)
+
 intent_chain = (
     {"question": RunnablePassthrough()}
     | intent_prompt
-    | llm
+    | llm_intent
     | StrOutputParser()
 )
 intent_answer = intent_chain.invoke(question).strip()
