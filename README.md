@@ -19,6 +19,6 @@ Runpod Pod Summary
 ```
 cd ~/Advanced-RAG
 curl -sSL https://install.python-poetry.org | python3 -
-export PATH='/root/.local/bin'
+export PATH=$HOME/.local/bin:$PATH
 poetry install
 ```
