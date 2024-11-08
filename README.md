@@ -1,5 +1,8 @@
 # Advanced-RAG
 RAG 관련 코드
+```
+git clone https://github.com/2024-iMOps/Advanced-RAG.git
+```
 
 ## 환경
 Runpod Pod Template
@@ -12,9 +15,9 @@ Runpod Pod Summary
 
 - 200 GB RAM • 36 vCPU
 
-## Poetry
+## Install
 ```
-cd /workspace/Advanced-RAG
+cd ~/Advanced-RAG
 curl -sSL https://install.python-poetry.org | python3 -
 export PATH='/root/.local/bin'
 poetry install
