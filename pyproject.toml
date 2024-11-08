@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "iMOps"
+version = "0.2.0"
+description = "RAG"
+authors = ["Jaemin Hong <jjaemni159@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+
+# 언어 및 자연어 처리 관련 패키지
+langchain = "^0.3"
+langchain-core = "^0.3"
+langchain-experimental = "^0.3"
+langchain-community = "^0.3"
+langchain-text-splitters = "^0.3"
+langchain-upstage = "^0.3"
+langchain-cohere = "^0.3"
+langchain-huggingface = "^0"
+langchain-teddynote = "^0.3.10"
+langchainhub = "^0.1.15"
+huggingface-hub = "^0.25"
+kiwipiepy = "^0.17.1"
+konlpy = "^0.6.0"
+
+# 데이터 처리 및 분석 관련 패키지
+pandas = "^2.2.2"
+rank-bm25 = "^0.2.2"
+
+# PDF 및 파일 처리 관련 패키지
+pdfplumber = "^0.11.1"
+pymupdf = "^1.24.1"
+easyocr = "^1.7.2"
+
+# 시각화 및 사용자 인터페이스 관련 패키지
+matplotlib = "^3.8.4"
+streamlit = "^1.32.2"
+notebook = "^7.1.2"
+seaborn = "^0.13.2"
+
+# 딥러닝 및 머신러닝 관련 패키지
+torch = "^2.2.2"
+
+# 기타 유틸리티 및 필수 패키지
+python-dotenv = "^1.0.1"
+pydantic = "^2.7.4"
+lxml = "^5.2.2"
+pillow = "^10.3.0"
+ragas = "^0.1.7"
+unstructured = {version = "0.10.19", extras = ["all-docs"]}
+rouge-score = "^0.1.2"
+
+poppler-utils = "^0.1.0"
+
+jupyter = "^1.1.1"
+ipykernel = "^6.29.5"
+
+natsort = "^8.4.0"
+markdownify = "^0.13.1"
+tqdm = "^4.66.5"
+faiss-gpu-cu12 = "^1.8.0.2"
+accelerate = "^1.0.0"
+
+einops = "^0.8.0"
+numpy = "<2"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+bcrypt = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
