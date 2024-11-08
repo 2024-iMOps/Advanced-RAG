@@ -6,7 +6,7 @@
         "chunk_overlap": 32,
         "embed_model": "BAAI/bge-multilingual-gemma2",
         "llm_model": "gpt-4o",
-        "llm_temperature": 0.56,
+        "llm_temperature": 0.3,
         "llm_max_tokens": 1024,
         "question": "매일플러스기업통장의 최고 금리는 얼마야?"
     }
